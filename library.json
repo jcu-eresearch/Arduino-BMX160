@@ -1,0 +1,31 @@
+{
+  "name": "Arduino-BMX160",
+  "version": "0.0.1",
+  "description": "An Arduino library to drive the Bosch BMX160 IMU chip.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcu-eresearch/Arduino-BMX160.git"
+  },
+  "keywords": [
+    "Sensor"
+  ],
+  "authors": [
+    {
+      "name": "NigelB"
+    }
+  ],
+  "frameworks": [
+    "arduino"
+  ],
+  "dependencies": {
+    "nigelb/BMI160": "0.0.1"
+  },
+  "license": "GPL-3.0",
+  "libArchive": false,
+  "build": {
+    "srcFilter": [
+      "+<*.cpp>",
+      "+<*.h>"
+    ]
+  }
+}
