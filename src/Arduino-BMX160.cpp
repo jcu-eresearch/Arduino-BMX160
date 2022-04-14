@@ -122,7 +122,7 @@ uint8_t ArduinoBMX160::setReg(uint8_t reg, uint8_t val)
 
 uint8_t ArduinoBMX160::setDataMode()
 {
-    uint8_t status;
+    uint8_t status = 0;
     uint8_t register_data;
     //Set Data Mode
     register_data = BMM150_SET_BITS(0, BMM150_OP_MODE, BMM150_POWERMODE_FORCED);                    //0x02
@@ -157,7 +157,7 @@ ArduinoBMX160_Status_e ArduinoBMX160::readData(struct bmi160_sensor_data *mag, s
 
 ArduinoBMX160_Status_e ArduinoBMX160::getIMUConfigs(bmi160_cfg &accel, bmi160_cfg &gyro, bmx160_mag_cfg &mag) {
     int8_t result = bmi160_get_sens_conf(&dev);
-    bmi160_pmu_status power_status;
+    bmi160_pmu_status power_status = {0};
     bmi160_get_power_mode(&power_status, &dev);
     if(result == BMI160_OK) {
         accel.bw = dev.accel_cfg.bw;

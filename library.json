@@ -21,8 +21,8 @@
     "nigelb/BMI160": "0.0.1"
   },
   "license": "GPL-3.0",
-  "libArchive": false,
   "build": {
+    "libArchive": false,
     "srcFilter": [
       "+<*.cpp>",
       "+<*.h>"
