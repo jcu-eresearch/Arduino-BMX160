@@ -18,7 +18,7 @@
     "arduino"
   ],
   "dependencies": {
-    "nigelb/BMI160": "0.0.1"
+    "BMI160": "0.0.1"
   },
   "license": "GPL-3.0",
   "build": {
